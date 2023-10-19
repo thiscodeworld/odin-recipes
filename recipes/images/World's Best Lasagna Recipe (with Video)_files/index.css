@@ -1,0 +1,98 @@
+ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
+ 
+html { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+ @font-face { font-family: 'TeleNeoWeb-Medium'; src: url('fonts/TeleNeoWeb-Medium.woff') format('woff');}
+ @font-face { font-family: 'TeleNeoWeb-ExtraBold'; src: url('fonts/TeleNeoWeb-ExtraBold.woff') format('woff');}
+
+/* ad */
+body { cursor: pointer !important; background: transparent !important; font-family: Asap, Arial, sans-serif;}
+span { display: block; word-wrap: break-word; /* IE>=5.5 */ white-space: -moz-pre-wrap; /* For Fx<=2 */ color: #fff; position:relative;}
+svg{ position: absolute; }
+strong, b { font-weight: bold; }
+sup { font-size:55%; vertical-align: super; line-height: 1;}
+
+ #viewport {
+     background: #e20074; overflow: hidden;
+     background-size: cover;
+ }
+ #F1, #F2, #F3, #EF {top:0px; left:0px;} /*F1-D animation*/
+
+#border{ border: solid 1px #666; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; pointer-events: none;}
+
+.adSize{width: 300px; height: 250px;}
+#failSafe { width: 83%; top:50%; left: 50%; -webkit-transform: translateY(-50%) translateX(-50%); transform: translateY(-50%) translateX(-50%); -ms-transform:translateY(-50%) translateX(-50%); transform:translateY(-50%) translateX(-50%); }
+
+/* classes */
+.posAbs { position: absolute !important;}
+.frames {opacity: 0; }
+.topL { top:0px; left:0px; } 
+.pointEvNone {pointer-events: none;}
+.visHid { visibility: hidden; opacity: 0; }
+.verticalAlignCenter{ /* Internet Explorer 10 */ display:-ms-flexbox; -ms-flex-pack:center; -ms-flex-align:center; /* Firefox */ display:-moz-box; -moz-box-pack:center; -moz-box-align:center; /* Safari, Opera, and Chrome */ display:-webkit-box; -webkit-box-pack:center; -webkit-box-align:center; /* W3C */ display:box; box-pack:center; box-align:center; }
+
+.largerLegal { font-size: 10px; line-height: 1; margin-top:-1px; font-family: "Arial", sans-serif;}
+.frameLegal { font-size: 9px; /*font-size: 2.8vw; line-height: 2.8vw;*/ position: absolute; width: 100%; /* max-height: 42px;*/ left: 0px; bottom: 0px; padding: 3px 12px 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Arial", sans-serif;}
+.lgl { font-family: "Arial", sans-serif; font-size: 9px; line-height: 9px; }
+
+.bar-overlay {position: absolute; height: 61px; width: 3px; background-color: #fff; left: 85px; top: 156px; z-index: 1; transform: rotate(180deg); transform-origin: top;}
+.bar-logo {stroke: aqua; stroke-width: 4px;}
+/* elements */
+.center-textAlign { text-align: center; }
+.left-textAlign { text-align: left; }
+.right-textAlign { text-align: right; }
+.box{ width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center;}
+.bound{ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; /* padding: 2.2em 0px 2em; */ -webkit-box-sizing: border-box; box-sizing: border-box; }
+.copy{ -webkit-box-ordinal-group:2; -ms-flex-order:1; order:1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; }
+.left-side { padding: 0px 137px 0px 12px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.full-width { padding: 0px 12px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.right-side { padding: 0px 12px 0px 137px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ultra{font-family: 'TeleNeoWeb-ExtraBold', Arial, sans-serif !important; line-height:3px;}
+.medium{font-family: 'TeleNeoWeb-Medium', Arial, sans-serif !important; line-height:0px;}
+
+/* in */
+#T_Logo, #Mobile_Logo, #bar_bg {width: 300px; height: 250px;}
+#sheen {width: 900px; height: 250px;}
+#t_logo-bg { width: 32px; height: 32px; top: 5px; left: 5px; background: #e20074; }
+#F1-1_image1-src_300x250, #F1-1_image2-src_300x250, #F1-1_image3_300x250, #F1-1_image4_300x250, #F1-1_image5_300x250, #F1-1_image6_300x250  {z-index: 1;}
+#F2-1_image1-src_300x250, #F2-1_image2-src_300x250, #F3-1_image1-src_300x250, #F3-1_image2-src_300x250, #EF-1_image1-src_300x250, #EF-1_image2-src_300x250 {z-index: 1;}
+
+/*holiday*/
+ #F1-1-holiday_image1, #F1-1-holiday_image2, #F1-1-holiday_image3, #F1-1-holiday_image4, #F1-1-holiday_image5, #F1-1-holiday_image6  {z-index: 1;}
+
+ /* f1 */
+ #F1-1_copy-input_300x250, #F1-2_copy-input_300x250, #F1-3_copy-input_300x250, #F1-4_copy-input_300x250 { font-family: 'TeleNeoWeb-Medium', Arial, sans-serif;}
+ #F1-box { text-align: center; }
+ #F1-bound { height:100%; /* padding: 0px 12px; */ -webkit-box-sizing: border-box; box-sizing: border-box; }
+ #F1-largerLegal {order:2;  padding:0px !important;}
+ #F1-frameLegal{ position: absolute; bottom:  0px;}
+
+/* f2 */
+#F2-box { text-align: center; }
+#F2-bound { height:100%; /* padding: 0px 137px 0px 12px; */ -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*#F2-3_copy { -webkit-box-ordinal-group:4; -ms-flex-order:3; order:3; font-family: 'TeleNeoWeb-Medium', Arial, sans-serif; line-height:20px; font-size:20px; padding-bottom:2px;}*/
+#F2-1_copy-input_300x250, #F2-2_copy-input_300x250, #F2-3_copy-input_300x250, #F2-4_copy-input_300x250 { font-family: 'TeleNeoWeb-Medium', Arial, sans-serif;}
+#F2-largerLegal {order:2;  padding:0px !important;}
+#F2-frameLegal{ position: absolute;  bottom:  0px;}
+
+/* f3 */
+#F3-box { text-align: center; }
+#F3-bound { padding: 0px 12px; -webkit-box-sizing: border-box; box-sizing: border-box;  }
+/*#F3-3_copy {-webkit-box-ordinal-group:4; -ms-flex-order:3; order:3; font-family: 'TeleNeoWeb-Medium', Arial, sans-serif; line-height:23px; font-size:23px; padding-bottom:2px;}*/
+#F3-1_copy-input_300x250, #F3-2_copy-input_300x250, #F3-3_copy-input_300x250, #F3-4_copy-input_300x250 { font-family: 'TeleNeoWeb-Medium', Arial, sans-serif;}
+#F3-largerLegal {order:2;  padding:0px !important;}
+#F3-frameLegal{ position: absolute;  bottom:  0px;}
+
+/* ef */
+#EF-box { text-align: center; }
+#EF-bound { /* padding: 0px 137px 0px 12px; */ -webkit-box-sizing: border-box; box-sizing: border-box; }
+#EF-1_copy-input_300x250, #EF-2_copy-input_300x250, #EF-3_copy-input_300x250, #EF-4_copy-input_300x250 { font-family: 'TeleNeoWeb-Medium', Arial, sans-serif;}
+#EF-largerLegal {order:2; padding:0px !important;}
+#EF-1_frameLegal-input_300x250 a {color:white; z-index: 1; position: relative;}
+#EF-frameLegal{ /* max-height:52px;*/ /*bottom: 2.5px; */overflow-x: hidden; overflow-y: scroll; scrollbar-width: none; /* Firefox */ -ms-overflow-style: none;  /* Internet Explorer 10+ */ }
+#EF-frameLegal::-webkit-scrollbar { /* WebKit */ width: 0; height: 0; }
+
+/* cta */
+#CTA-bound{ /* padding: 0px 137px 0px 12px; */ -webkit-box-sizing: border-box; box-sizing: border-box;  }
+#CTA-bound {/*height: 32px; */ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; /* justify-content: center; */ -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+#CTA-1_copy-input_300x250 {font-family: 'TeleNeoWeb-ExtraBold', 'Arial Bold', sans-serif; min-width: 96px; /* margin-top: 8px; */ background: #000; overflow: hidden; font-size: 16px; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; padding: 2px 10px 3px; }
